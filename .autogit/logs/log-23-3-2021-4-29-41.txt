@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Fri Apr 23 2021 04:29:41 GMT+0300 (Israel Daylight Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-23-3-2021-3-59-19.txt
+
+
+Deleted files:
+* .autogit/logs/.gitkeep
+
+
+Renamed files:
