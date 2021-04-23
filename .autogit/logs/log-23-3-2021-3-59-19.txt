@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Fri Apr 23 2021 03:59:19 GMT+0300 (Israel Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+
+
+Created files:
+* src/Components/CartItems/index.js
+* src/Components/Container/index.js
+* src/Components/Footer/index.js
+* src/Components/Navbar/index.js
+* src/Components/ProductDetails/index.js
+* src/Components/ProductsList/index.js
+
+
+Deleted files:
+
+
+Renamed files:
