@@ -1,12 +1,16 @@
-import Products from "./productApi.json";
+import axios from "./../../node_modules/axios/index"
 
-function getAll(){
-    return Promise.resolve(Products);
+
+const Products = ()=>{
+    return(
+       axios.get('/products')
+      .then((response) => {
+        console.log(response)
+      }, (error) => {
+        console.log(error)
+      })
+    )
+    
 }
 
-export function getById(id){
-    const product = Products.find(item => item.id === id);
-
-    return Promise.resolve(product)
-}
-export default getAll
+export default Products
