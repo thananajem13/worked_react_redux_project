@@ -1,24 +1,24 @@
 import React from 'react';
 
-import axios from 'axios';
-
+// import axios from 'axios';
+// const api = axios.create({
+//     baseURL : `http://localhost:3000/`
+// })
 export default class ProductList extends React.Component {
   state = {
-    persons: []
+    products: []
   }
 
   componentDidMount() {
-    axios.get(`product_api.json`)
-      .then(res => {
-        const persons = res.data;
-        this.setState({ persons });
-      })
+    fetch('./product_api.json')
+    .then(response => response.json())
+    .then(data => console.log(data));
   }
 
-  render() {
+  render() { 
     return (
       <ul>
-        { this.state.persons.map(person => <li>{person.name}</li>)}
+        { this.state.products.map(product => <li key={product.id}>{product.productName}</li>)}
       </ul>
     )
   }
