@@ -2,7 +2,7 @@ import './App.css';
 import {connect} from 'react-redux'
 import {addToCart} from './actions/index'
 import { Component } from 'react';
-import Products from './api/index'
+// import Products from './api/index'
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,6 +10,7 @@ import {
   Link
 } from "react-router-dom";
 import axios from 'axios'
+import ProductList from './ProductList';
 class App extends Component {
   state = {
     product: [],
@@ -19,15 +20,16 @@ class App extends Component {
     return (
       <Router>
             <div className="App">
-      {`products:${Products()}`}
-      <button onClick={()=>{ 
+              <ProductList/>
+      {/* {`products:${Products()}`} */}
+      {/* <button onClick={()=>{ 
         console.log(this.props.add_to_cart({id:2, price:1000, name:'dell lap', qty:2}))
         console.log(this.props.cart) 
-      }}>Appear action in console</button>
+      }}>Appear action in console</button> */}
     </div>
     <Switch>
-          <Route path="/products">
-            <Products />
+          <Route path="/Productlist">
+            <ProductList />
           </Route> 
         </Switch>
       </Router>
